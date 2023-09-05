@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0A41522AA7A5600005A69B /* BeginningMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0A41512AA7A5600005A69B /* BeginningMenu.swift */; };
 		3D30512D2AA5B64600670A75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D30512C2AA5B64600670A75 /* AppDelegate.swift */; };
 		3D30512F2AA5B64600670A75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D30512E2AA5B64600670A75 /* SceneDelegate.swift */; };
-		3D3051312AA5B64600670A75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3051302AA5B64600670A75 /* ViewController.swift */; };
+		3D3051312AA5B64600670A75 /* iPhoneMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3051302AA5B64600670A75 /* iPhoneMenu.swift */; };
 		3D3051342AA5B64600670A75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3051322AA5B64600670A75 /* Main.storyboard */; };
 		3D3051362AA5B64700670A75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3051352AA5B64700670A75 /* Assets.xcassets */; };
 		3D3051392AA5B64700670A75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3051372AA5B64700670A75 /* LaunchScreen.storyboard */; };
+		3D3051412AA5B66700670A75 /* iPhoneVS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3051402AA5B66700670A75 /* iPhoneVS.swift */; };
+		3D3051432AA6655B00670A75 /* mainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3051422AA6655B00670A75 /* mainMenu.swift */; };
+		3D3051452AA6695F00670A75 /* macVS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3051442AA6695F00670A75 /* macVS.swift */; };
+		3D3051472AA66D3C00670A75 /* macMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3051462AA66D3C00670A75 /* macMenu.swift */; };
+		3D3051492AA66D5200670A75 /* ipadMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3051482AA66D5200670A75 /* ipadMenu.swift */; };
+		3D30514B2AA66D6500670A75 /* ipadVS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D30514A2AA66D6500670A75 /* ipadVS.swift */; };
+		3D30514D2AA66D8E00670A75 /* accessoriesMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D30514C2AA66D8E00670A75 /* accessoriesMenu.swift */; };
+		3D30514F2AA66D9F00670A75 /* accessoriesVS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D30514E2AA66D9F00670A75 /* accessoriesVS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D0A41512AA7A5600005A69B /* BeginningMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginningMenu.swift; sourceTree = "<group>"; };
 		3D3051292AA5B64600670A75 /* LandmarkBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandmarkBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D30512C2AA5B64600670A75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D30512E2AA5B64600670A75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3D3051302AA5B64600670A75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D3051302AA5B64600670A75 /* iPhoneMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneMenu.swift; sourceTree = "<group>"; };
 		3D3051332AA5B64600670A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D3051352AA5B64700670A75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D3051382AA5B64700670A75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D30513A2AA5B64700670A75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D3051402AA5B66700670A75 /* iPhoneVS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneVS.swift; sourceTree = "<group>"; };
+		3D3051422AA6655B00670A75 /* mainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainMenu.swift; sourceTree = "<group>"; };
+		3D3051442AA6695F00670A75 /* macVS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macVS.swift; sourceTree = "<group>"; };
+		3D3051462AA66D3C00670A75 /* macMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macMenu.swift; sourceTree = "<group>"; };
+		3D3051482AA66D5200670A75 /* ipadMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ipadMenu.swift; sourceTree = "<group>"; };
+		3D30514A2AA66D6500670A75 /* ipadVS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ipadVS.swift; sourceTree = "<group>"; };
+		3D30514C2AA66D8E00670A75 /* accessoriesMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accessoriesMenu.swift; sourceTree = "<group>"; };
+		3D30514E2AA66D9F00670A75 /* accessoriesVS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accessoriesVS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +76,16 @@
 			children = (
 				3D30512C2AA5B64600670A75 /* AppDelegate.swift */,
 				3D30512E2AA5B64600670A75 /* SceneDelegate.swift */,
-				3D3051302AA5B64600670A75 /* ViewController.swift */,
+				3D0A41512AA7A5600005A69B /* BeginningMenu.swift */,
+				3D3051422AA6655B00670A75 /* mainMenu.swift */,
+				3D3051302AA5B64600670A75 /* iPhoneMenu.swift */,
+				3D3051402AA5B66700670A75 /* iPhoneVS.swift */,
+				3D3051462AA66D3C00670A75 /* macMenu.swift */,
+				3D3051442AA6695F00670A75 /* macVS.swift */,
+				3D3051482AA66D5200670A75 /* ipadMenu.swift */,
+				3D30514A2AA66D6500670A75 /* ipadVS.swift */,
+				3D30514C2AA66D8E00670A75 /* accessoriesMenu.swift */,
+				3D30514E2AA66D9F00670A75 /* accessoriesVS.swift */,
 				3D3051322AA5B64600670A75 /* Main.storyboard */,
 				3D3051352AA5B64700670A75 /* Assets.xcassets */,
 				3D3051372AA5B64700670A75 /* LaunchScreen.storyboard */,
@@ -138,8 +165,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D3051312AA5B64600670A75 /* ViewController.swift in Sources */,
+				3D0A41522AA7A5600005A69B /* BeginningMenu.swift in Sources */,
+				3D3051452AA6695F00670A75 /* macVS.swift in Sources */,
+				3D3051432AA6655B00670A75 /* mainMenu.swift in Sources */,
+				3D30514F2AA66D9F00670A75 /* accessoriesVS.swift in Sources */,
+				3D3051312AA5B64600670A75 /* iPhoneMenu.swift in Sources */,
+				3D3051412AA5B66700670A75 /* iPhoneVS.swift in Sources */,
+				3D3051492AA66D5200670A75 /* ipadMenu.swift in Sources */,
+				3D30514D2AA66D8E00670A75 /* accessoriesMenu.swift in Sources */,
 				3D30512D2AA5B64600670A75 /* AppDelegate.swift in Sources */,
+				3D3051472AA66D3C00670A75 /* macMenu.swift in Sources */,
+				3D30514B2AA66D6500670A75 /* ipadVS.swift in Sources */,
 				3D30512F2AA5B64600670A75 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

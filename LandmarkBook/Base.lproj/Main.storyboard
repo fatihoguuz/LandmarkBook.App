@@ -1,24 +1,443 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uUe-qw-6OI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main Menu-->
+        <scene sceneID="7GC-Me-hmg">
+            <objects>
+                <viewController id="OAF-HN-16g" customClass="mainMenu" customModule="LandmarkBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ooe-Mz-LI7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iPhone 14 Pro" translatesAutoresizingMaskIntoConstraints="NO" id="K4S-Z7-fQN">
+                                <rect key="frame" x="20" y="284" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="macbook air" translatesAutoresizingMaskIntoConstraints="NO" id="swI-ib-Oye">
+                                <rect key="frame" x="216" y="284" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="airpods" translatesAutoresizingMaskIntoConstraints="NO" id="jSA-d3-Eua">
+                                <rect key="frame" x="216" y="549" width="74" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ipad pro" translatesAutoresizingMaskIntoConstraints="NO" id="kXk-Oy-jo9">
+                                <rect key="frame" x="20" y="549" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple watch" translatesAutoresizingMaskIntoConstraints="NO" id="qKr-mk-QdF">
+                                <rect key="frame" x="216" y="627" width="74" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple pencil" translatesAutoresizingMaskIntoConstraints="NO" id="hez-iR-EGo">
+                                <rect key="frame" x="292" y="624" width="74" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="airpods max" translatesAutoresizingMaskIntoConstraints="NO" id="Swp-7q-jl5">
+                                <rect key="frame" x="292" y="549" width="74" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPA-on-kUx">
+                                <rect key="frame" x="20" y="284" width="142" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="iPhoneButton:" destination="OAF-HN-16g" eventType="touchUpInside" id="K3h-ey-KWD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHB-4e-A5q">
+                                <rect key="frame" x="216" y="284" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="macbookButton:" destination="OAF-HN-16g" eventType="touchUpInside" id="XDy-nB-TvQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3k-XN-Ioc">
+                                <rect key="frame" x="20" y="549" width="142" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="ipadButoon:" destination="OAF-HN-16g" eventType="touchUpInside" id="cQv-92-4gf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQv-er-eiq">
+                                <rect key="frame" x="216" y="557" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=""/>
+                                <connections>
+                                    <action selector="accessoriesButton:" destination="OAF-HN-16g" eventType="touchUpInside" id="qig-MX-mJP"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="appleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4Lh-aJ-7wJ">
+                                <rect key="frame" x="144" y="92" width="127" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KnJ-Xt-j3o"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YT5-Ii-Q3x"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="iPhone" id="lYH-qo-nMa"/>
+                        <segue destination="4MO-zV-w0C" kind="show" identifier="macbook" id="0mz-8w-k0I"/>
+                        <segue destination="nOH-on-QPO" kind="show" identifier="ipad" id="mSv-wb-BbV"/>
+                        <segue destination="cih-OU-pQz" kind="show" identifier="accessories" id="INw-mn-eVQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qhk-Fg-Agd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1989.8550724637682" y="2.6785714285714284"/>
+        </scene>
+        <!--Accessories Menu-->
+        <scene sceneID="KpL-8z-2FB">
+            <objects>
+                <viewController id="cih-OU-pQz" customClass="accessoriesMenu" customModule="LandmarkBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ymq-AS-HvP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bfe-8y-mcb">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sek-as-29R"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="Bfe-8y-mcb" firstAttribute="top" secondItem="sek-as-29R" secondAttribute="top" id="64S-6p-CkF"/>
+                            <constraint firstItem="sek-as-29R" firstAttribute="bottom" secondItem="Bfe-8y-mcb" secondAttribute="bottom" id="Ok3-ge-2R8"/>
+                            <constraint firstItem="Bfe-8y-mcb" firstAttribute="leading" secondItem="sek-as-29R" secondAttribute="leading" id="YNy-pG-viN"/>
+                            <constraint firstItem="sek-as-29R" firstAttribute="trailing" secondItem="Bfe-8y-mcb" secondAttribute="trailing" id="aSe-zX-jNP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="j3n-Ke-bAg"/>
+                    <connections>
+                        <outlet property="tableView" destination="Bfe-8y-mcb" id="CIt-KX-XRM"/>
+                        <segue destination="Ruz-IS-EhL" kind="show" identifier="accessoriesVS" id="3u3-ei-S3y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2l9-kP-4G3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958" y="2455"/>
+        </scene>
+        <!--AccessoriesVS-->
+        <scene sceneID="3RQ-Bb-2mD">
+            <objects>
+                <viewController id="Ruz-IS-EhL" customClass="accessoriesVS" customModule="LandmarkBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nD1-Hr-R1r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ztg-wU-PeG">
+                                <rect key="frame" x="27" y="563" width="360" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Stj-6e-pBs">
+                                <rect key="frame" x="57" y="118" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dtD-SE-B4A"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vZm-Yb-wM4"/>
+                    <connections>
+                        <outlet property="imageView" destination="Stj-6e-pBs" id="8HV-ig-7sR"/>
+                        <outlet property="textLabel" destination="Ztg-wU-PeG" id="PyP-gu-0QO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="am2-Uw-N1q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2815.9420289855075" y="2454.9107142857142"/>
+        </scene>
+        <!--iPhone Menu-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="iPhoneMenu" customModule="LandmarkBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MdL-sj-UOg">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="MdL-sj-UOg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FrG-HD-HLc"/>
+                            <constraint firstItem="MdL-sj-UOg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vlx-Vp-tsh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MdL-sj-UOg" secondAttribute="trailing" id="kjw-7D-yju"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MdL-sj-UOg" secondAttribute="bottom" id="kmQ-Zt-vuU"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="awP-aw-bg8"/>
+                    <connections>
+                        <outlet property="tableView" destination="MdL-sj-UOg" id="Zy0-UC-ZF7"/>
+                        <segue destination="VeO-sL-fGC" kind="show" identifier="SecondVS" id="K0H-fg-q0i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2868.115942028986" y="3.3482142857142856"/>
+        </scene>
+        <!--Beginning Menu-->
+        <scene sceneID="HR1-3j-Xm2">
+            <objects>
+                <viewController id="pIA-jx-So2" customClass="BeginningMenu" customModule="LandmarkBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mmH-sF-JIA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple-machintosh-tasarim-logo-meyveler-duvar-kagidi" translatesAutoresizingMaskIntoConstraints="NO" id="wwc-2C-bTL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9x3-hJ-2rv">
+                                <rect key="frame" x="167" y="647" width="80" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C29-OH-GZt">
+                                <rect key="frame" x="166" y="745" width="83" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Next"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="pIA-jx-So2" eventType="touchUpInside" id="MV8-6p-SGo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6dG-J6-cmO"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YYW-1P-0Nd"/>
+                    <connections>
+                        <segue destination="OAF-HN-16g" kind="show" identifier="nextButton" id="esJ-iK-xql"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CVy-NX-nig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926.08695652173924" y="2.6785714285714284"/>
+        </scene>
+        <!--Mac Menu-->
+        <scene sceneID="LRC-eq-msn">
+            <objects>
+                <viewController id="4MO-zV-w0C" customClass="macMenu" customModule="LandmarkBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rcj-Vu-qCl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aoP-r7-IE1">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="83a-7U-CcM"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="aoP-r7-IE1" firstAttribute="top" secondItem="83a-7U-CcM" secondAttribute="top" id="Tdr-DG-xBu"/>
+                            <constraint firstItem="aoP-r7-IE1" firstAttribute="leading" secondItem="83a-7U-CcM" secondAttribute="leading" id="awF-xf-p8G"/>
+                            <constraint firstItem="83a-7U-CcM" firstAttribute="bottom" secondItem="aoP-r7-IE1" secondAttribute="bottom" id="bJC-po-duv"/>
+                            <constraint firstItem="83a-7U-CcM" firstAttribute="trailing" secondItem="aoP-r7-IE1" secondAttribute="trailing" id="gyS-Zy-k8U"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AcJ-8y-Vjh"/>
+                    <connections>
+                        <outlet property="tableView" destination="aoP-r7-IE1" id="QQ6-2F-D53"/>
+                        <segue destination="BYj-Eb-DWB" kind="show" identifier="macVS" id="zFP-eb-b1K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QRU-7b-4aN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958" y="757"/>
+        </scene>
+        <!--MacVS-->
+        <scene sceneID="3oK-Eh-W4R">
+            <objects>
+                <viewController id="BYj-Eb-DWB" customClass="macVS" customModule="LandmarkBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mHu-9D-3ue">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FZR-pC-vSl">
+                                <rect key="frame" x="57" y="203" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VQ-Li-F3B">
+                                <rect key="frame" x="29" y="595" width="357" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Rzb-0o-Byd"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7fV-FY-kr5"/>
+                    <connections>
+                        <outlet property="imageView" destination="FZR-pC-vSl" id="HO5-VL-7ip"/>
+                        <outlet property="textLabel" destination="3VQ-Li-F3B" id="CdQ-CC-1vE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXF-4j-1vx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2815.9420289855075" y="756.69642857142856"/>
+        </scene>
+        <!--Ipad Menu-->
+        <scene sceneID="LZS-rN-9eQ">
+            <objects>
+                <viewController id="nOH-on-QPO" customClass="ipadMenu" customModule="LandmarkBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E4R-Ta-BFu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="lIn-lE-dKv">
+                                <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xdq-Jv-q4H"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="Xdq-Jv-q4H" firstAttribute="bottom" secondItem="lIn-lE-dKv" secondAttribute="bottom" id="L8n-g7-NhY"/>
+                            <constraint firstItem="lIn-lE-dKv" firstAttribute="top" secondItem="Xdq-Jv-q4H" secondAttribute="top" id="Ubd-p1-kQ1"/>
+                            <constraint firstItem="Xdq-Jv-q4H" firstAttribute="trailing" secondItem="lIn-lE-dKv" secondAttribute="trailing" id="dzI-Y9-NGf"/>
+                            <constraint firstItem="lIn-lE-dKv" firstAttribute="leading" secondItem="Xdq-Jv-q4H" secondAttribute="leading" id="r8l-Qq-egr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UcD-Yu-aFM"/>
+                    <connections>
+                        <outlet property="tableView" destination="lIn-lE-dKv" id="wva-zK-m06"/>
+                        <segue destination="p4u-k4-Pts" kind="show" identifier="ipadVS" id="ZS6-SC-W51"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efG-xx-tqT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958" y="1554"/>
+        </scene>
+        <!--IpadVS-->
+        <scene sceneID="rcz-Ep-toP">
+            <objects>
+                <viewController id="p4u-k4-Pts" customClass="ipadVS" customModule="LandmarkBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oNo-zu-rJw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98j-Yd-yWU">
+                                <rect key="frame" x="33" y="583" width="348" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oZk-2D-JPT">
+                                <rect key="frame" x="57" y="173" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="l4P-dz-HDX"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ETk-ar-DpP"/>
+                    <connections>
+                        <outlet property="imageView" destination="oZk-2D-JPT" id="Yus-yP-zdl"/>
+                        <outlet property="textLabel" destination="98j-Yd-yWU" id="NYh-MD-HSE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wxf-xa-rpt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2815.9420289855075" y="1553.5714285714284"/>
+        </scene>
+        <!--iPhoneVS-->
+        <scene sceneID="K5j-Do-q3R">
+            <objects>
+                <viewController id="VeO-sL-fGC" customClass="iPhoneVS" customModule="LandmarkBook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZzM-Ql-Y1D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9tU-jV-18j">
+                                <rect key="frame" x="57" y="185" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iIK-9F-H0r">
+                                <rect key="frame" x="43" y="587" width="329" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yh2-mB-OUC"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jBa-6H-9EH"/>
+                    <connections>
+                        <outlet property="imageView" destination="9tU-jV-18j" id="w1g-Q9-NBa"/>
+                        <outlet property="textLabel" destination="iIK-9F-H0r" id="GLr-A3-Ufr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hZT-hE-hFC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3726.0869565217395" y="3.3482142857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sLb-RR-nHj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uUe-qw-6OI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bTD-we-yeK">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pIA-jx-So2" kind="relationship" relationship="rootViewController" id="4pN-d1-70A"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9t-bL-uJv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="2.6785714285714284"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="airpods" width="1273" height="1740"/>
+        <image name="airpods max" width="940" height="1112"/>
+        <image name="apple pencil" width="91" height="1530"/>
+        <image name="apple watch" width="2773" height="3279"/>
+        <image name="apple-machintosh-tasarim-logo-meyveler-duvar-kagidi" width="1200" height="900"/>
+        <image name="appleLogo" width="230" height="282"/>
+        <image name="iPhone 14 Pro" width="866" height="1066"/>
+        <image name="ipad pro" width="1383" height="1572"/>
+        <image name="macbook air" width="3323" height="2011"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
